@@ -12,14 +12,14 @@ mtx init(int n, int m) {
   for (auto &r : a) r.resize(m);
   return a;
 }
-void diagflip(mtx &a) {
+void diag_flip(mtx &a) {
   int n = a.size(), m = a[0].size();
   mtx b = init(m, n);
   for (int i = 0; i < n; i++)
     for (int j = 0; j < m; j++) b[j][i] = a[i][j];
   a = b;
 }
-void horflip(mtx &a) { reverse(a.begin(), a.end()); }
+void hori_flip(mtx &a) { reverse(a.begin(), a.end()); }
 void strip(mtx &a) {
   while (a.size()) {
     for (auto v : a.back())
@@ -37,7 +37,7 @@ mtx seek(mtx &a) {
     }
   return b;
 }
-int finderr(mtx a) {
+int find_err(mtx a) {
   for (int i = 0; i < a.size(); i++) {
     int s[3];
     memset(s, 0, sizeof(s));
@@ -50,10 +50,10 @@ int finderr(mtx a) {
 mtx shrink(mtx a) {
   int n = a.size(), m = a[0].size();
   if (n <= 2 || m <= 2) return {};
-  int x = finderr(a);
-  diagflip(a);
-  int y = finderr(a);
-  diagflip(a);
+  int x = find_err(a);
+  diag_flip(a);
+  int y = find_err(a);
+  diag_flip(a);
   if (~x) a[x][y] ^= 1;
   mtx b = seek(a);
   for (auto &r : a)
@@ -62,9 +62,9 @@ mtx shrink(mtx a) {
   for (int i = 0; i < 2; i++) {
     for (int j = 0; j < 2; j++) {
       strip(b);
-      horflip(b);
+      hori_flip(b);
     }
-    diagflip(b);
+    diag_flip(b);
   }
   return b;
 }
