@@ -39,6 +39,7 @@ Solved at 2022.10.10 (+4)
 
 找到噪点后去除噪点，然后用类似多项式除法的方式解出状态 $S$ 的生长前状态 $grow^{-1}(S)$，如果不存在，因为每次生长后状态的大小都会严格变大，所以当前的状态就是题目所求的最小初始状态。
 
+
 ## [RB](https://codeforces.com/gym/101142/problem/B)
 ACM ICPC 2016–2017, NEERC, Northern Subregional Contest, Problem B
 
