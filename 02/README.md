@@ -24,9 +24,18 @@ Solved at 2022.10.15 (+1)
 如果根节点是方结点，我们对所有子节点递归构造，然后构造方结点对应的环。我们用 $3$ 表示待加入的结点根，$2$ 表示目前加入结点形成环上链的末尾。除了开头和结尾需要讨论，我们只需要将代加入的结点的 $4$ 改成 $3$，合并其与环的集合，在 $2$ 与 $3$ 之间连边，将 $2$ 改为构造完成的 $1$ 再将 $3$ 改为链末尾的 $2$.
 
 
-## [IB](https://codeforces.com/gym/100851/problem/B) 
+## [IB](https://codeforces.com/gym/100851/problem/B)
+ACM ICPC 2015–2016, Northeastern European Regional Contest, Problem B
 
-Unsolved.
+Solved at 2022.10.15 (+1)
+
+题意：
+
+找到第 $n$ 大的满足条件的数，条件为其十进制表达是二进制表达的后缀。
+
+题解：
+
+
 
 
 ## [FJ](https://codeforces.com/gym/102511/problem/J)
