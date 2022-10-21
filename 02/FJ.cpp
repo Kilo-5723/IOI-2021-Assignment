@@ -4,7 +4,7 @@ using namespace std;
 typedef long long ll;
 struct frac {
   ll a, b;
-  frac(ll a = 0, ll b = 1) : a(a), b(b) {}
+  frac 
 };
 bool operator<(const frac &a, const frac &b) { return a.a * b.b < b.a * a.b; }
 struct cplx {
