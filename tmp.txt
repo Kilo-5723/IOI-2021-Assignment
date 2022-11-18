@@ -1,0 +1,10 @@
+
+  for (int i1 = a[0]; i1; i1 -= lowbit(i1))
+    for (int i2 = a[1]; i2; i2 -= lowbit(i2))
+      for (int i3 = a[2]; i3; i3 -= lowbit(i3))
+        for (int i4 = a[3]; i4; i4 -= lowbit(i4))
+          for (int i5 = a[4]; i5; i5 -= lowbit(i5))
+            for (int i6 = a[5]; i6; i6 -= lowbit(i6))
+              for (int i7 = a[6]; i7; i7 -= lowbit(i7))
+                for (int i8 = a[7]; i8; i8 -= lowbit(i8))
+                  ans += tr[i1][i2][i3][i4][i5][i6][i7][i8];
