@@ -45,7 +45,7 @@ Solved at 2022.10.15 (+1)
 ## [FJ](https://codeforces.com/gym/102511/problem/J)
 ICPC 2019, World Finals, Problem J
 
-Solved at 2022.11.08 (+)
+Solved at 2022.11.08 (+5)
 
 题意：
 
