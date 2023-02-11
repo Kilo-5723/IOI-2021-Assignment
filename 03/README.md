@@ -3,7 +3,8 @@ ACM ICPC 2017–2018, NEERC – Northern Eurasia Finals, Problem K
 Solved at 2022.11.29 (+22)
 
 ## [UH](https://codeforces.com/gym/100269/problem/H)
-
+ACM ICPC 2013–2014, NEERC, Northern Subregional Contest, Problem H
+Solved at 2023.2.12 (+4)
 
 ## [QH](https://codeforces.com/gym/101612/problem/H)
 ICPC 2017–2018, NEERC, Northern Subregional Contest, Problem H
